@@ -12,7 +12,7 @@ const projects = [
     description:
       "A horror adventure game created and released on Itch.io using Unreal Engine 5 and C++. Features atmospheric gameplay and immersive storytelling.",
     technologies: ["Unreal Engine 5", "C++", "Blueprint"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "./WendigoLurks.png?height=300&width=500",
     links: {
       demo: "#",
       github: "#",
@@ -26,7 +26,7 @@ const projects = [
     description:
       "Award-winning narrative-driven puzzle adventure game showcasing Jordanian landmarks. Won 1st Place at JSYP 2024 GameJam.",
     technologies: ["Unreal Engine 5", "C++", "Facial Motion Capture"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "./Emma.png?height=300&width=500",
     links: {
       demo: "#",
     },
@@ -39,7 +39,7 @@ const projects = [
     description:
       "Trained YOLOv11 model for firearm and human detection with real-time webcam implementation for security applications.",
     technologies: ["Python", "YOLOv11", "OpenCV", "PyTorch"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "./gcnn.png?height=300&width=500",
     links: {
       github: "#",
     },
@@ -52,7 +52,7 @@ const projects = [
     description:
       "Trained Kyutai Moshi STS model on Arabic language from scratch, enabling natural speech-to-speech conversations.",
     technologies: ["Python", "Moshi", "TensorFlow", "NLP"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "./sts.png?height=300&width=500",
     links: {
       github: "#",
     },
@@ -65,20 +65,21 @@ const projects = [
     description:
       "Recreated War Thunder's flight mechanics with JSBSim physics plugin. Features 1:1 Earth replica with Montreal to NYC flight demo.",
     technologies: ["Unreal Engine 5", "C++", "JSBSim", "Physics Simulation"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "./flight.png?height=300&width=500",
     links: {
       demo: "#",
     },
     featured: false,
   },
+  
   {
     id: 6,
     title: "Tactical Shooter System",
     category: "Game Development",
     description:
-      "Recreated Escape from Tarkov's modular gun customization using recursion and optimized algorithms with multiplayer support.",
+      "Created a multiplayer ready, Slow paced tactical shooter with procedural animations, realistic gun handling and realistic ballistic physics.",
     technologies: ["Unreal Engine 5", "C++", "Networking", "Procedural Animation"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "./tactical.png?height=300&width=500",
     links: {
       demo: "#",
     },
@@ -86,24 +87,37 @@ const projects = [
   },
   {
     id: 7,
+    title: "Modular Gun Customization System",
+    category: "Game Development",
+    description:
+      "Recreated Escape from Tarkov's modular gun customization using recursion and optimized algorithms with multiplayer support.",
+    technologies: ["Unreal Engine 5", "C++", "Networking"],
+    image: "/gun.png?height=300&width=500",
+    links: {
+      demo: "#",
+    },
+    featured: false,
+  },
+  {
+    id: 8,
     title: "Biomass Production Analysis",
     category: "Data Science",
     description:
       "Comprehensive data analysis on biomass production with LSTM networks, decision trees, and genetic algorithm optimization.",
     technologies: ["Python", "Jupyter", "LSTM", "Genetic Algorithms"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/Rainfall.png?height=300&width=500",
     links: {
       github: "#",
     },
     featured: false,
   },
   {
-    id: 8,
+    id: 9,
     title: "Dental Appointment Website",
     category: "Web Development",
     description: "Full-stack dental website with scheduling system built using MERN stack and SQL database.",
     technologies: ["React", "Node.js", "MongoDB", "SQL"],
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/dental.png?height=300&width=500",
     links: {
       demo: "#",
       github: "#",
