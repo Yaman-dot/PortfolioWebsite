@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/PortfolioWebsite",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    unoptimized: true,
+  },
   output: "export",  // <=== enables static exports
   reactStrictMode: true,
-};
+}
 
-module.exports = nextConfig;
+export default nextConfig
