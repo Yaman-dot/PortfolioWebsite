@@ -7,6 +7,18 @@ import { useState } from "react"
 // YouTube video data - replace with your actual video IDs and information
 const videos = [
   {
+    id: "0GTHnTyMbKM", // Replace with actual video ID
+    title: "How to Create an AI Controller in Uneal Engine 4",
+    description:
+      "A comprehensive guide on how to create an AI controller in Unreal Engine 4.",
+    thumbnail: "https://img.youtube.com/vi/0GTHnTyMbKM/maxresdefault.jpg",
+    duration: "16:42",
+    views: "1.4K",
+    publishedAt: "2024-03-01",
+    category: "Unreal Engine",
+    featured: true,
+  },
+  {
     id: "Oa4MW66Kt1E", // Replace with actual video ID
     title: "Unreal Engine 4 | How to Program Leaning and Shooting",
     description:
@@ -172,18 +184,7 @@ const videos = [
     category: "Unity",
     featured: false,
   },
-  {
-    id: "0GTHnTyMbKM", // Replace with actual video ID
-    title: "How to Create an AI Controller in Uneal Engine 4",
-    description:
-      "A comprehensive guide on how to create an AI controller in Unreal Engine 4.",
-    thumbnail: "https://img.youtube.com/vi/0GTHnTyMbKM/maxresdefault.jpg",
-    duration: "16:42",
-    views: "1.4K",
-    publishedAt: "2024-03-01",
-    category: "Unreal Engine",
-    featured: true,
-  },
+  
 ]
 
 const categories = ["All", "Unreal Engine", "Unity", "XCode" ,"Python", ]
