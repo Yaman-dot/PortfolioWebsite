@@ -7,98 +7,209 @@ import { useState } from "react"
 // YouTube video data - replace with your actual video IDs and information
 const videos = [
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "Unreal Engine 5 - Advanced Gun Customization System",
-    description:
-      "Deep dive into creating Escape from Tarkov's modular weapon system using recursion and optimized algorithms in UE5.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "15:32",
-    views: "12.5K",
-    publishedAt: "2024-01-15",
-    category: "Game Development",
-    featured: true,
+    id: "lE4A109EdFo",
+    title: "Gun Attachment System UI Update",
+    description: "expect better stuff in the future",
+    thumbnail: "https://img.youtube.com/vi/lE4A109EdFo/maxresdefault.jpg",
+    duration: "2:33",
+    views: "134",
+    publishedAt: "May 4, 2025",
+    category: "Unknown",
+    featured: true
   },
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "Building AI Object Detection with YOLOv11",
-    description:
-      "Complete tutorial on training a custom YOLOv11 model for firearm and human detection with real-time webcam implementation.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "22:18",
-    views: "8.3K",
-    publishedAt: "2024-02-03",
-    category: "AI & Machine Learning",
-    featured: true,
+    id: "laEI0PYveZ8",
+    title: "Extremely Modular Gun Customization System in Unreal Engine",
+    description: "This is the first version of the system so call it v0.0.1",
+    thumbnail: "https://img.youtube.com/vi/laEI0PYveZ8/maxresdefault.jpg",
+    duration: "6:23",
+    views: "257",
+    publishedAt: "Apr 1, 2025",
+    category: "Unknown"
   },
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "Realistic Flight Physics in Unreal Engine 5",
-    description:
-      "Recreating War Thunder's flight mechanics with JSBSim physics plugin and 1:1 Earth replica demonstration.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "18:45",
-    views: "15.7K",
-    publishedAt: "2024-01-28",
-    category: "Game Development",
-    featured: true,
+    id: "HLrVkP2wt9c",
+    title: "Unreal Engine Reinforcement Learning AI",
+    description: "Used Reinforcement learning to teach AI how to drive a car around a track.",
+    thumbnail: "https://img.youtube.com/vi/HLrVkP2wt9c/maxresdefault.jpg",
+    duration: "7:14",
+    views: "150",
+    publishedAt: "Jun 2, 2024",
+    category: "Unknown",
+    featured: true
   },
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "The Wendigo Lurks - Game Development Breakdown",
-    description: "Behind the scenes look at creating my horror adventure game from concept to release on Itch.io.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "12:24",
-    views: "6.9K",
-    publishedAt: "2023-12-10",
-    category: "Game Development",
-    featured: false,
+    id: "-ypd8nYjtZ8",
+    title: "Parkour System in UE5 using motion warping",
+    description: "nothing fancy just motion warping",
+    thumbnail: "https://img.youtube.com/vi/-ypd8nYjtZ8/maxresdefault.jpg",
+    duration: "0:25",
+    views: "11.9K",
+    publishedAt: "N/A",
+    category: "Game Development"
   },
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "Arabic Speech-to-Speech AI Model Training",
-    description: "Training Kyutai Moshi STS model on Arabic language from scratch - challenges and solutions.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "25:12",
-    views: "4.2K",
-    publishedAt: "2024-02-20",
-    category: "AI & Machine Learning",
-    featured: false,
+    id: "nLM2qWPNqn8",
+    title: "Flying from Montreal to New York In Unreal Engine 5",
+    description: "I am using the open-source Jsbsim flight dynamic model for the aircraft's physics and aerodynamics https://github.com/JSBSim-Team/jsbsim",
+    thumbnail: "https://img.youtube.com/vi/nLM2qWPNqn8/maxresdefault.jpg",
+    duration: "11:46",
+    views: "1.3K",
+    publishedAt: "N/A",
+    category: "Unknown",
+    featured: true
   },
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "Procedural Animation Systems in UE5",
-    description: "Creating realistic character animations and weapon handling systems with procedural techniques.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "19:33",
-    views: "9.1K",
-    publishedAt: "2024-01-05",
-    category: "Game Development",
-    featured: false,
+    id: "eSjTgJvztxg",
+    title: "UE 5.1 Motion Matching Test #2",
+    description: "made with the help of pose search and motion trajectories plugin.",
+    thumbnail: "https://img.youtube.com/vi/eSjTgJvztxg/maxresdefault.jpg",
+    duration: "2:08",
+    views: "3.1K",
+    publishedAt: "N/A",
+    category: "Unknown"
   },
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "Data Science Project: Biomass Production Analysis",
-    description:
-      "Complete walkthrough of data analysis, LSTM networks, and genetic algorithm optimization for biomass prediction.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "28:15",
-    views: "3.8K",
-    publishedAt: "2023-11-22",
-    category: "Data Science",
-    featured: false,
+    id: "KWXGDoILTf8",
+    title: "UE5.1 Motion Matching",
+    description: "made with the help of pose search and motion trajectories plugin.",
+    thumbnail: "https://img.youtube.com/vi/KWXGDoILTf8/maxresdefault.jpg",
+    duration: "2:45",
+    views: "3.7K",
+    publishedAt: "N/A",
+    category: "Game Development"
   },
   {
-    id: "dQw4w9WgXcQ", // Replace with actual video ID
-    title: "JSYP GameJam 2024 - Hakaya Emma Development",
-    description:
-      "Time-lapse and breakdown of creating our award-winning game in 48 hours, showcasing Jordanian landmarks.",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-    duration: "16:42",
-    views: "11.3K",
-    publishedAt: "2024-03-01",
-    category: "Game Development",
-    featured: false,
+    id: "5O28Z527vcQ",
+    title: "Procedural Walking Tutorial UE5",
+    description: "This Video explains the logic and the method to achieve procedural walking, I have done only the front leg and not the back to demonstrate the methods. I explained what you need to do to rotate...",  
+    thumbnail: "https://img.youtube.com/vi/5O28Z527vcQ/maxresdefault.jpg",
+    duration: "48:04",
+    views: "3.6K",
+    publishedAt: "N/A",
+    category: "Game Development"
   },
+  {
+    id: "klFlgJ_Vs8c",
+    title: "Ue5 procedural walking",
+    description: "This is a test of procedural walking, I will make a tutorial on how to do it in the future.",
+    thumbnail: "https://img.youtube.com/vi/klFlgJ_Vs8c/maxresdefault.jpg",
+    duration: "2:07",
+    views: "2.2K",
+    publishedAt: "N/A",
+    category: "Game Development"
+  },
+  {
+    id: "z0u9c3iysYI",
+    title: "Deadzone Aim with procedural ADS Test in UE5",
+    description: "really un-optimized when i go to ads as this is all done in blueprint and not cpp.",
+    thumbnail: "https://img.youtube.com/vi/z0u9c3iysYI/maxresdefault.jpg",
+    duration: "1:03",
+    views: "2.0K",
+    publishedAt: "N/A",
+    category: "Game Development"
+  },
+  {
+    id: "3xYobBSVuTQ",
+    title: "Jet Flight Test in UE5 with warthunder style mouse flight",
+    description: "mouse controls inspired by Warthunder",
+    thumbnail: "https://img.youtube.com/vi/3xYobBSVuTQ/maxresdefault.jpg",
+    duration: "1:29",
+    views: "4.8K",
+    publishedAt: "N/A",
+    category: "Game Development"
+  },
+  {
+    id: "FykyVE7VAQs",
+    title: "Alsv4 Sword Locomotion Test",
+    description: "Had this idea in my mind for a while and really wanted to see it work, so here it is, animations are from the marketplace. I won't work on it full time and I will return working on my tactical...",   
+    thumbnail: "https://img.youtube.com/vi/FykyVE7VAQs/maxresdefault.jpg",
+    duration: "1:59",
+    views: "1.2K",
+    publishedAt: "N/A",
+    category: "Unknown"
+  },
+  {
+    id: "UzcZzP88yRI",
+    title: "Unnamed Shooter Update 1.0.2",
+    description: "Updated the game with a new map, new weapons, and a new UI, also added a new features.",
+    thumbnail: "https://img.youtube.com/vi/UzcZzP88yRI/maxresdefault.jpg",
+    duration: "3:07",
+    views: "2.5K",
+    publishedAt: "May 4, 2025",
+    category: "Unknown",
+    featured: true
+  },
+  {
+    id: "eZ5KYQ0HYts",
+    title: "Backrooms Found Footage",
+    description: "Found Footage, recorded by Mark White 07/11/2006 made in blender",
+    thumbnail: "https://img.youtube.com/vi/eZ5KYQ0HYts/maxresdefault.jpg",
+    duration: "0:23",
+    views: "279",
+    publishedAt: "N/A",
+    category: "Unknown"
+  },
+  {
+    id: "ynYAZ-JK_uo",
+    title: "Procedural Weapon Sway",
+    description: "Will optimize it more in the future, its not replicated because it would take a lot of bandwidth",
+    thumbnail: "https://img.youtube.com/vi/ynYAZ-JK_uo/maxresdefault.jpg",
+    duration: "1:05",
+    views: "7.4K",
+    publishedAt: "N/A",
+    category: "Unknown"
+  },
+  {
+    id: "SqqIn9sE8t4",
+    title: "Network replication test Server to Client | UE5",
+    description: "for some reason replicating the aim offset doesn't work from server to client, i am not sure why.",
+    thumbnail: "https://img.youtube.com/vi/SqqIn9sE8t4/maxresdefault.jpg",
+    duration: "1:09",
+    views: "6.5K",
+    publishedAt: "N/A",
+    category: "Game Development"
+  },
+  {
+    id: "0jZRSYCXpqo",
+    title: "Procedural Leaning",
+    description: "N/A",
+    thumbnail: "https://img.youtube.com/vi/0jZRSYCXpqo/maxresdefault.jpg",
+    duration: "2:38",
+    views: "1.2K",
+    publishedAt: "N/A",
+    category: "Unknown"
+  },
+  {
+    id: "UkV8U7uTnWk",
+    title: "Procedural Recoil Tutorial (Blueprint) | UE4",
+    description: "going to make a tut in cpp in the future",
+    thumbnail: "https://img.youtube.com/vi/UkV8U7uTnWk/maxresdefault.jpg",
+    duration: "16:03",
+    views: "4.0K",
+    publishedAt: "N/A",
+    category: "Unknown"
+  },
+  {
+    id: "Ymu_jeBIdjc",
+    title: "Procedural Sight Cycling | UE4",
+    description: "Cycling sights in ue4 procedurally super simple",
+    thumbnail: "https://img.youtube.com/vi/Ymu_jeBIdjc/maxresdefault.jpg",
+    duration: "0:45",
+    views: "2.8K",
+    publishedAt: "N/A",
+    category: "Unknown"
+  },
+  {
+    id: "x2w00WlVZOY",
+    title: "Procedural and Animated recoil combined.",
+    description: "N/A",
+    thumbnail: "https://img.youtube.com/vi/x2w00WlVZOY/maxresdefault.jpg",
+    duration: "0:58",
+    views: "4.0K",
+    publishedAt: "N/A",
+    category: "Unknown"
+  }
 ]
 
 const categories = ["All", "Game Development", "AI & Machine Learning", "Data Science"]
