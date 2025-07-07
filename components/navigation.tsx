@@ -12,8 +12,9 @@ const navItems = [
   { name: "Projects", href: "/projects" },
   { name: "Young Yuman", href: "/young" },
   { name: "Videos", href: "/videos" },
+  { name: "Community Spotlight", href: "/spotlight" },
   { name: "Skills", href: "/skills" },
-  { name: "Contact", href: "/contact" },
+  { name: "Contact", href: "/contact" }
 ]
 
 export default function Navigation() {
