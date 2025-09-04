@@ -47,7 +47,7 @@ export default function Home() {
             className="mb-6"
           >
             <span className="inline-block px-4 py-2 glass rounded-full text-sm text-blue-400 mb-8">
-              AI Developer & Game Engineer
+              AI Engineer & Game Developer
             </span>
           </motion.div>
 
@@ -66,7 +66,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
           >
-            AI & Data Science student crafting intelligent solutions and immersive gaming experiences
+            AI Engineer crafting intelligent solutions and immersive gaming experiences
           </motion.p>
 
           <motion.p
